@@ -13,7 +13,6 @@ export class UserRolesController {
   }
 
   @Get('user-data')
-  @UseGuards(RolesGuard)
   @Roles(Role.User)
   getUserData() {
     return { message: 'This is user data' };
