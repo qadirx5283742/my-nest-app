@@ -6,6 +6,6 @@ export class EvService {
   constructor(private configureService: ConfigService) {}
 
   getDbUrl() {
-    return this.configureService.get<string>('DATABASE_URL');
+    return this.configureService.get<string>('DATABASE_URL_LOCAL');
   }
 }
